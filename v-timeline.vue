@@ -2,10 +2,12 @@
 <style src="./style.css" scoped></style>
 
 <script>
+import genericPoints from "./points.js"
+
 export default {
   name: "v-timeline",
   props: {
-    pointers: null
+    pointers: genericPoints,
   },
   data() {
     return {
