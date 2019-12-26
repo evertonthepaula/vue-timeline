@@ -1,0 +1,13 @@
+<div class="timeline-container">
+  <template v-for="point in points">
+    <div class="point-box">
+      <div class="point"
+          :class="{active : (point.id === pointActive)}"
+          :data-name="point.name"
+          @click="clickHandler(point)"
+        >
+        {{point.id}}
+      </div>
+    </div>
+  </template>
+</div>
